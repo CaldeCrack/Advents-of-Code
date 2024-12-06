@@ -1,3 +1,5 @@
+# --- Day 1: Historian Hysteria ---
+
 idList1: list[int] = []
 idList2: list[int] = []
 frequencies: dict[int, int] = {}
