@@ -4,7 +4,6 @@
 idList1: list[int] = []
 idList2: list[int] = []
 frequencies: dict[int, int] = {}
-
 while ids := list(map(int, input().split())):
 	idList1.append(ids[0])
 	idList2.append(ids[1])
