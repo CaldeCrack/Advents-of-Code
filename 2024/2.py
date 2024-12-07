@@ -1,4 +1,5 @@
 # --- Day 2: Red-Nosed Reports ---
+# https://adventofcode.com/2024/day/2
 
 def check_safe(report: list[int]) -> bool:
 	increasing = report[0] < report[1]
