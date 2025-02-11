@@ -1,14 +1,18 @@
-# First Star
-data = open("data.txt", "r") # no care about closing the file
-newData, calories, n = data.readlines(), [], 0
+# --- Day 1: Calorie Counting ---
+# https://adventofcode.com/2022/day/1
 
-for line in newData:
-    if line == "\n" or line == "":
-        calories.append(n)
-        n = 0
-        continue
-    n += int(line[:-1])
+calories: list[int] = []
+n: int = 0
+while True:
+	calorie: str = input()
+	if not calorie:
+		if n == 0:
+			break
+		calories.append(n)
+		n = 0
+		continue
+	n += int(calorie)
 
-# Second Star
 calories.sort()
-print("max:" , str(calories[-1]) + ", sum of the highest three:" , str(sum(calories[-3:])))
+print(f'Part 1 solution: {calories[-1]}')
+print(f'Part 2 solution: {sum(calories[-3:])}')
