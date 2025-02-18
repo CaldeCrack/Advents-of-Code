@@ -1,7 +1,7 @@
 # --- Day 6: Guard Gallivant ---
 # https://adventofcode.com/2024/day/6
-
 import re, copy
+
 
 initial_guard_map: list[list[str]] = []
 initial_guard_col: int

@@ -1,7 +1,7 @@
 # --- Day 3: Mull It Over ---
 # https://adventofcode.com/2024/day/3
-
 import re
+
 
 total: int = 0
 conditional_total: int = 0
